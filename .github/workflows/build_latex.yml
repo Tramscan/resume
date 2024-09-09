@@ -15,9 +15,3 @@ jobs:
         with:
           name: Resume
           path: NickClineResume.pdf  # Update this to match your desired output PDF name
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          force_orphan: true
