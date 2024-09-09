@@ -1,0 +1,166 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{Nick Cline}
+
+Somerville, MA \textbar{} +1 978-880-3507 \textbar{}
+nicholascline1@gmail.com \textbar{} nickcline.com
+
+\textbf{Education}
+
+\begin{quote}
+\textbf{University of Massachusetts Amherst Amherst, MA}
+
+\emph{B.S., M.S. in Mechanical Engineering \textbar{} GPA 3.49/4.0 May
+2022}
+
+\emph{Minor in Computer Science}
+\end{quote}
+
+\textbf{Work Experience}
+
+\begin{quote}
+\textbf{Draper Laboratory} \textbf{Cambridge, MA}
+
+\emph{Mechanical Instrumentation Engineer II Aug 2022 -- Present}
+\end{quote}
+
+\begin{itemize}
+\item
+  Developed innovative design features for a sensor assembly by
+  exploring trade spaces and proposing new solutions, coordinating with
+  a cross-functional team to plan reviews, track performance and meet
+  strict requirements.
+\item
+  Designed and tested production prototypes, analyzing test data to
+  identify areas for revision and validate production processes for
+  critical assembly features.
+\end{itemize}
+
+\begin{quote}
+\textbf{Charge Analytics LLC} \textbf{Ipswich, MA}
+
+\emph{Design Engineer Jun 2021 - Aug 2021}
+\end{quote}
+
+\begin{itemize}
+\item
+  Executed end-to-end product development processes, from initial
+  concept ideation and mechanical design to electronics packaging and
+  prototype fabrication using 3D printing techniques.
+\item
+  Generated CNC Fabrication process for retrofitting low-volume IoT
+  parts to reduce costs by nearly 90\% relative to quotes.
+\end{itemize}
+
+\textbf{Research Experience}
+
+\begin{quote}
+\textbf{University of Massachusetts Amherst HRSL} \textbf{Amherst, MA}
+
+\emph{Graduate Researcher Dec 2021 - May 2022}
+\end{quote}
+
+\begin{itemize}
+\item
+  Created control scripts in Python to implement custom impedance
+  control loops on the HRSL Hip Exoskeleton using a Raspberry Pi 4 and
+  the FlexSEA API.
+\item
+  Analyzed the effect of unilateral stiffness on human gait by comparing
+  kinematic metrics over stiffness ON and OFF phases, with results
+  published in IROS 2022.
+\item
+  Identified key areas for quality-of-life improvements and wrote
+  software solutions to deliver key test metrics in real-time with low
+  latency, enabling better feedback for control and evaluation.
+\end{itemize}
+
+\textbf{PROject experience}
+
+\textbf{Robotic Simulation}
+
+\begin{itemize}
+\item
+  Built a Furuta pendulum model for use in Gazebo, controlled with C++
+  scripts and ROS 2. Developed swing-up and energy-minimizing
+  controllers to stabilize pendulum. Future implementations include RL
+  control of the pendulum and double pendulum control.
+\end{itemize}
+
+\textbf{Publications}
+
+M. Price et al., "Unilateral stiffness modulation with a robotic hip
+exoskeleton elicits adaptation during gait," 2022 IEEE/RSJ International
+Conference on Intelligent Robots and Systems (IROS), Kyoto, Japan, 2022,
+pp. 12275-12281, doi: 10.1109/IROS47612.2022.9981067.
+
+\textbf{Skills \& Interests}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\endhead
+\textbf{Skills} & Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB,
+Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics,
+OpenCV.\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{document}
