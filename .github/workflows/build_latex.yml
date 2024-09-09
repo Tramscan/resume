@@ -9,12 +9,12 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: your_resume.tex
+          root_file: NickClineResume.tex  # Update this to match your .tex filename
       - name: Upload PDF file
         uses: actions/upload-artifact@v2
         with:
           name: Resume
-          path: your_resume.pdf
+          path: NickClineResume.pdf  # Update this to match your desired output PDF name
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
