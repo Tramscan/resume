@@ -8,6 +8,14 @@
 % Set page margins to 0.23 inches
 \usepackage[margin=0.23in]{geometry}
 
+% Define a command for section headings
+\newcommand{\sectionheading}[1]{%
+  \vspace{1em}%
+  {\large\textbf{\MakeUppercase{#1}}}\\[-0.5em]%
+  \rule{\textwidth}{0.5pt}%
+  \vspace{0.5em}%
+}
+
 \author{}
 \date{}
 
@@ -27,9 +35,7 @@ Somerville, MA \textbar{} +1 978-880-3507 \textbar{}
 nicholascline1@gmail.com \textbar{} nickcline.com
 \par}
 
-\vspace{1em}  % Add more vertical space before next section
-
-\textbf{Education}
+\sectionheading{Education}
 
 \textbf{University of Massachusetts Amherst Amherst, MA}
 
@@ -38,7 +44,7 @@ nicholascline1@gmail.com \textbar{} nickcline.com
 
 \emph{Minor in Computer Science}
 
-\textbf{Work Experience}
+\sectionheading{Work Experience}
 
 \textbf{Draper Laboratory} \textbf{Cambridge, MA}
 
@@ -70,7 +76,7 @@ nicholascline1@gmail.com \textbar{} nickcline.com
   parts to reduce costs by nearly 90\% relative to quotes.
 \end{itemize}
 
-\textbf{Research Experience}
+\sectionheading{Research Experience}
 
 \textbf{University of Massachusetts Amherst HRSL} \textbf{Amherst, MA}
 
@@ -91,7 +97,7 @@ nicholascline1@gmail.com \textbar{} nickcline.com
   latency, enabling better feedback for control and evaluation.
 \end{itemize}
 
-\textbf{Project experience}
+\sectionheading{Project Experience}
 
 \textbf{Robotic Simulation}
 
@@ -103,14 +109,14 @@ nicholascline1@gmail.com \textbar{} nickcline.com
   control of the pendulum and double pendulum control.
 \end{itemize}
 
-\textbf{Publications}
+\sectionheading{Publications}
 
 M. Price et al., "Unilateral stiffness modulation with a robotic hip
 exoskeleton elicits adaptation during gait," 2022 IEEE/RSJ International
 Conference on Intelligent Robots and Systems (IROS), Kyoto, Japan, 2022,
 pp. 12275-12281, doi: 10.1109/IROS47612.2022.9981067.
 
-\textbf{Skills \& Interests}
+\sectionheading{Skills \& Interests}
 
 \textbf{Skills:} Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB,
 Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV.
