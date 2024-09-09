@@ -10,8 +10,10 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: NickClineResume.tex  # Update this to match your .tex filename
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v2
-        with:
-          name: Resume
-          path: NickClineResume.pdf  # Update this to match your desired output PDF name
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add NickClineResume.pdf
+          git commit -m "Update compiled PDF" || exit 0
+          git push
