@@ -1,4 +1,4 @@
-name: Build LaTeX document
+name: Build LaTeX documents
 on: [push]
 jobs:
   build_latex:
@@ -9,30 +9,43 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile LaTeX document
+      - name: Compile NickClineResume
         uses: xu-cheng/latex-action@v2
         with:
           root_file: NickClineResume.tex
 
-      - name: Upload PDF as artifact
+      - name: Compile NickClineResearchResume
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: NickClineResearchResume.tex
+
+      - name: Upload NickClineResume as artifact
         uses: actions/upload-artifact@v2
         with:
           name: NickClineResume
           path: NickClineResume.pdf
 
-      - name: Commit PDF to pdf-branch
+      - name: Upload NickClineResearchResume as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: NickClineResearchResume
+          path: NickClineResearchResume.pdf
+
+      - name: Commit PDFs to pdf-branch
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git checkout -b pdf-branch
-          git add NickClineResume.pdf
-          git commit -m "Update PDF resume" || echo "No changes to commit"
+          git add NickClineResume.pdf NickClineResearchResume.pdf
+          git commit -m "Update PDF resumes" || echo "No changes to commit"
           git push origin pdf-branch --force
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: NickClineResume.pdf
+          files: |
+            NickClineResume.pdf
+            NickClineResearchResume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
