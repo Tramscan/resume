@@ -7,26 +7,26 @@ jobs:
       contents: write
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Compile NickClineResume
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: NickClineResume.tex
 
       - name: Compile NickClineResearchResume
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: NickClineResearchResume.tex
 
       - name: Upload NickClineResume as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: NickClineResume
           path: NickClineResume.pdf
 
       - name: Upload NickClineResearchResume as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: NickClineResearchResume
           path: NickClineResearchResume.pdf
