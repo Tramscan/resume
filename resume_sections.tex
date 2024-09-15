@@ -1,3 +1,5 @@
+\usepackage{array}
+
 % ===== SHARED SECTIONS =====
 
 % Name and Contact Information (Shared)
@@ -34,10 +36,10 @@
 % Skills & Interests Section (Shared)
 \newcommand{\SkillsInterests}{
   \sectionheading{Skills \& Interests}
-  \noindent\begin{tabular}{@{}p{4em}@{\hspace{0.5em}}p{\dimexpr\textwidth-4.5em-2\tabcolsep\relax}@{}}
-    \textbf{Skills:} & 
+  \noindent\begin{tabular}{@{}m{5.5em}@{\hspace{0.5em}}p{\dimexpr\textwidth-6em-2\tabcolsep\relax}@{}}
+    \centering\textbf{Skills:} & 
     Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV. \\[0.5em]
-    \textbf{Interests:} & 
+    \centering\textbf{Interests:} & 
     Robotics, Control Theory, Machine Learning, AI, Mechanism Design, 3D Printing, Gardening, Cooking, Weightlifting.
   \end{tabular}
 }
