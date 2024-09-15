@@ -1,9 +1,25 @@
+% Pass options to packages
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
 % Packages and settings
 \usepackage[margin=0.23in]{geometry}
 \usepackage{setspace}
 \setstretch{1.0}
 \usepackage{enumitem}
 \setlist{noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt}
+
+% Add hyperref package for links (comment out if not needed)
+% \usepackage{hyperref}
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=cyan,
+% }
+
+% Add url package for better URL formatting (comment out if not needed)
+% \usepackage{url}
 
 % Custom commands
 \newcommand{\sectionheading}[1]{%
