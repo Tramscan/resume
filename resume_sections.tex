@@ -1,12 +1,47 @@
-% Education Section
-\newcommand{\EducationResearch}{
+% ===== SHARED SECTIONS =====
+
+% Name and Contact Information (Shared)
+\newcommand{\NameAndContact}{
+  % Center, bold, and enlarge name
+  {\centering
+  \huge\textbf{Nick Cline}
+  \par}
+
+  \vspace{0.5em}  % Add some vertical space
+
+  % Center and reduce spacing for contact info
+  {\centering
+  \small
+  Somerville, MA \textbar{} +1 978-880-3507 \textbar{}
+  nicholascline1@gmail.com \textbar{} nickcline.com
+  \par}
+}
+
+% Education Section (Shared)
+\newcommand{\Education}{
   \sectionheading{Education}
   \entry{University of Massachusetts Amherst Amherst, MA}{May 2022}
   \textit{B.S., M.S. in Mechanical Engineering \textbar{} GPA 3.49/4.0}
   \textit{Minor in Computer Science}
 }
 
-% Research Experience Section
+% Publications Section (Shared)
+\newcommand{\Publications}{
+  \sectionheading{Publications}
+  Price, M., Abdikadirova, B., Locurto, D., Jaramillo, J. M., \textbf{Cline, N.}, Hoogkamer, W., \& Huber, M. E. (2022). Unilateral stiffness modulation with a robotic hip exoskeleton elicits adaptation during gait. In 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 12275–12281). 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE. https://doi.org/10.1109/iros47612.2022.9981067 
+}
+
+% Skills & Interests Section (Shared)
+\newcommand{\SkillsInterests}{
+  \sectionheading{Skills \& Interests}
+  \textbf{Skills:} Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV.
+
+  \textbf{Interests:} Robotics, Control Theory, Machine Learning, AI, Mechanism Design, 3D Printing, Gardening, Cooking, Weightlifting.
+}
+
+% ===== RESEARCH RESUME SECTIONS =====
+
+% Research Experience Section - Research Version
 \newcommand{\ResearchExperienceResearch}{
   \sectionheading{Research Experience}
   \entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
@@ -19,7 +54,7 @@
   \end{itemize}
 }
 
-% Work Experience Section
+% Work Experience Section - Research Version
 \newcommand{\WorkExperienceResearch}{
   \sectionheading{Work Experience}
   \entry{Draper Laboratory, Cambridge, MA}{Aug 2022 -- Present}
@@ -36,7 +71,7 @@
   \end{itemize}
 }
 
-% Project Experience Section
+% Project Experience Section - Research Version
 \newcommand{\ProjectExperienceResearch}{
   \sectionheading{Project Experience}
   \textbf{Robotic Simulation}
@@ -47,16 +82,59 @@
   \end{itemize}
 }
 
-% Publications Section
-\newcommand{\PublicationsResearch}{
-  \sectionheading{Publications}
-  Price, M., Abdikadirova, B., Locurto, D., Jaramillo, J. M., \textbf{Cline, N.}, Hoogkamer, W., \& Huber, M. E. (2022). Unilateral stiffness modulation with a robotic hip exoskeleton elicits adaptation during gait. In 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 12275–12281). 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE. https://doi.org/10.1109/iros47612.2022.9981067 
+% ===== REGULAR RESUME SECTIONS =====
+
+% Research Experience Section - Resume Version
+\newcommand{\ResearchExperienceResume}{
+  \sectionheading{Research Experience}
+  \entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
+  \textit{Graduate Researcher}
+  \begin{itemize}
+  \item Created control scripts in Python to interface with a robotic exoskeleton and collect data from motion capture and force plates.
+  \item Analyzed the effect of unilateral stiffness on human gait using MATLAB, identifying key trends in joint angles and ground reaction forces.
+  \item Identified key areas for quality-of-life improvements in the lab's data collection pipeline, implementing solutions to streamline the process.
+  \end{itemize}
 }
 
-% Skills & Interests Section
-\newcommand{\SkillsInterestsResearch}{
-  \sectionheading{Skills \& Interests}
-  \textbf{Skills:} Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV.
-
-  \textbf{Interests:} Robotics, Control Theory, Machine Learning, AI, Mechanism Design, 3D Printing, Gardening, Cooking, Weightlifting.
+% Work Experience Section - Resume Version
+\newcommand{\WorkExperienceResume}{
+  \sectionheading{Work Experience}
+  \entry{Draper Laboratory, Cambridge, MA}{Aug 2022 -- Present}
+  \textit{Mechanical Instrumentation Engineer II}
+  \begin{itemize}
+  \item Developed innovative design features for sensor assemblies, coordinating with cross-functional teams to meet strict requirements.
+  \item Designed and tested production prototypes, validating processes for critical assembly features.
+  \end{itemize}
+  
+  \entry{Charge Analytics LLC, Ipswich, MA}{Jun 2021 -- Aug 2021}
+  \textit{Design Engineer}
+  \begin{itemize}
+  \item Executed product development processes, designing electronics packaging and rapid prototyping for low volume production.
+  \item Generated CNC fabrication processes, reducing costs by 90%.
+  \end{itemize}
 }
+
+% Project Experience Section - Resume Version
+\newcommand{\ProjectExperienceResume}{
+  \sectionheading{Project Experience}
+  \textbf{Robotic Simulation}
+  \begin{itemize}
+  \item Developed a Furuta pendulum model using Gazebo, C++, and ROS 2, implementing swing-up and energy-minimizing controllers.
+  \item Designed and prototyped gearboxes for brushless DC motors, optimizing for assembly and strength.
+  \item Created a benchtop dynamometer to evaluate motor performance for a bipedal robot design.
+  \end{itemize}
+}
+% Research Experience Section - Resume Version
+\newcommand{\ResearchExperienceResume}{
+  \sectionheading{Research Experience}
+  \entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
+  \textit{Graduate Researcher}
+  \begin{itemize}
+  \item Created control scripts in Python to interface with a robotic exoskeleton and collect data from motion capture and force plates.
+  \item Analyzed the effect of unilateral stiffness on human gait using MATLAB, identifying key trends in joint angles and ground reaction forces.
+  \item Identified key areas for quality-of-life improvements in the lab's data collection pipeline, implementing solutions to streamline the process.
+  \end{itemize}
+}
+
+
+

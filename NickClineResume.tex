@@ -3,93 +3,22 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 
-% Set page margins to 0.23 inches
-\usepackage[margin=0.23in]{geometry}
-
-% Define a command for section headings
-\newcommand{\sectionheading}[1]{%
-  \vspace{1em}%
-  {\large\textbf{\MakeUppercase{#1}}}\\[-0.5em]%
-  \rule{\textwidth}{0.5pt}%
-  \vspace{0.5em}%
-}
-
-% Define a command for entries with right-justified dates
-\newcommand{\entry}[2]{%
-  \noindent\makebox[\textwidth]{%
-    \parbox{\textwidth}{%
-      \textbf{#1}\hfill\textit{#2}%
-    }%
-  }%
-}
+\input{resume_settings}
+\input{resume_sections}
 
 \author{}
 \date{}
 
 \begin{document}
 
-% Center, bold, and enlarge name
-{\centering
-\huge\textbf{Nick Cline}
-\par}
+\NameAndContact
 
-\vspace{0.5em}  % Add some vertical space
-
-% Center and reduce spacing for contact info
-{\centering
-\small
-Somerville, MA \textbar{} +1 978-880-3507 \textbar{}
-nicholascline1@gmail.com \textbar{} nickcline.com
-\par}
-
-\sectionheading{Education}
-
-\entry{University of Massachusetts Amherst Amherst, MA}{May 2022}
-
-\textit{B.S., M.S. in Mechanical Engineering \textbar{} GPA 3.49/4.0}
-
-\textit{Minor in Computer Science}
-
-\sectionheading{Work Experience}
-
-\entry{Draper Laboratory, Cambridge, MA}{Aug 2022 -- Present}
-\textit{Mechanical Instrumentation Engineer II}
-\begin{itemize}
-\item Developed innovative design features for a sensor assembly by exploring trade spaces and proposing new solutions, coordinating with a cross-functional team to plan reviews, track performance and meet strict requirements.
-\item Designed and tested production prototypes, analyzing test data to identify areas for revision and validate production processes for critical assembly features.
-\end{itemize}
-
-\entry{Charge Analytics LLC, Ipswich, MA}{Jun 2021 -- Aug 2021}
-\textit{Design Engineer}
-\begin{itemize}
-\item Executed end-to-end product development processes, designing electronics packaging and rapid prototyping for low volume production. Generated CNC fabrication processes to reduce procurement and manufacturing costs by 90%.
-\end{itemize}
-
-\sectionheading{Research Experience}
-
-\entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
-\textit{Graduate Researcher}
-\begin{itemize}
-\item Created control scripts in Python to interface with a robotic exoskeleton and collect data from motion capture and force plates.
-\item Analyzed the effect of unilateral stiffness on human gait using MATLAB, identifying key trends in joint angles and ground reaction forces.
-\item Identified key areas for quality-of-life improvements in the lab's data collection pipeline, implementing solutions to streamline the process.
-\end{itemize}
-
-\sectionheading{Project Experience}
-
-\textbf{Robotic Simulation}
-\begin{itemize}
-\item Built a Furuta pendulum model for use in Gazebo, controlled with C++ scripts and ROS 2. Developed swing-up and energy-minimizing controllers to stabilize pendulum. Future implementations include RL control of the pendulum and double pendulum control.
-\end{itemize}
-
-\sectionheading{Publications}
-
-M. Price et al., "Unilateral stiffness modulation with a robotic hip exoskeleton elicits adaptation during gait," 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Kyoto, Japan, 2022, pp. 12275-12281, doi: 10.1109/IROS47612.2022.9981067.
-
-\sectionheading{Skills \& Interests}
-
-\textbf{Skills:} Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV.
+\Education
+\WorkExperienceResume
+\ResearchExperienceResume
+\ProjectExperienceResume
+\Publications
+\SkillsInterests
 
 \end{document}
