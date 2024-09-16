@@ -22,7 +22,7 @@
 % Education Section (Shared)
 \newcommand{\Education}{
   \sectionheading{Education}
-  \entry{University of Massachusetts Amherst Amherst, MA}{May 2022}
+  \entry{University of Massachusetts, Amherst, MA}{May 2022}
   \textit{B.S., M.S. in Mechanical Engineering \textbar{} GPA 3.49/4.0}\\
   \textit{Minor in Computer Science}
 }
@@ -41,7 +41,7 @@
     \begin{minipage}{0.9\textwidth}
       \centering
       \large\itshape\color{darkgray}
-      Experienced mechanical engineer with expertise in robotics control systems and software development, seeking to apply advanced skills in AI, machine learning, and mechanism design to create innovative solutions in robotics control and intelligent systems.
+      Experienced robotics engineer with expertise in robotics controls and software development, seeking to apply advanced skills in nonlinear dynamics, control theory, and mechanism design to create innovative solutions in robotics control and intelligent systems.
     \end{minipage}
   \end{center}
   \vspace{-1.5em}  % Reduce space after mission statement
@@ -54,7 +54,7 @@
     \begin{minipage}[c][1.25\baselineskip][c]{5.5em}
       \centering\textbf{Skills:}
     \end{minipage} & 
-    Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV. \\[-0.25em]
+    Atlassian Suite, C, C++, Python, Rust, Julia, MATLAB, Solidworks, ROS 2, Gazebo, Drake, MPC, Nonlinear Dynamics, OpenCV, Git, LaTeX. \\[-0.25em] %maybe add which of these I'm an expert in, or order these
     \begin{minipage}[c][1.25\baselineskip][c]{5.5em}
       \centering\textbf{Interests:}
     \end{minipage} & 
@@ -70,8 +70,8 @@
   \entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
   \textit{Graduate Researcher}
   \begin{itemize}
-  \item Created control scripts in python to implement custom impedance control loops for a robotic hip exoskeleton using a Raspberri Pi 4 and the FlexSEA API.
-  \item Applied asymmetric perturbations to human gait to study behavioral adaptations to a resistant exoskeleton stiffness. Compiled and analyzed data from motion capture and ground reaction forces to identify key trends and possible neuromotor impacts.
+  \item Created control scripts in python to implement custom impedance control loops for a robotic hip exoskeleton using the FlexSEA API on Linux.
+  \item Applied asymmetric stiffness to human gait to study behavioral adaptations to a resistant exoskeleton torque. Compiled and analyzed data from motion capture and ground reaction forces to identify key trends and possible neuromotor impacts.
   \item Used findings to evaluate the gait patterns resulting from the exoskeleton's impedance with results published in IROS 2022.
   \item Identified new control schemes for gait control, documenting and testing the initial implementation. Takeaways from the experiments were used to develop tools for realtime data analysis and an improved setup process.
   \end{itemize}
@@ -83,32 +83,40 @@
   \entry{Draper Laboratory, Cambridge, MA}{Aug 2022 -- Present}
   \textit{Mechanical Instrumentation Engineer II}
   \begin{itemize}
-  \item Developed innovative design features for a sensor assembly by exploring trade spaces and proposing new solutions, coordinating with a cross-functional team to plan reviews, track performance and meet strict requirements.
+  \item Developed innovative design features for a sensor assembly, playing a key role in a cross-functional team by exploring trade spaces and implementing new solutions.
+  \item Led significant project design reviews, with the goal of tracking performance and meeting strict requirements.
   \item Designed and tested production prototypes, analyzing test data to identify areas for revision and validate production processes for critical assembly features.
+  %if you have space, add a sentence about material selection, production ready machining, analysis
   \end{itemize}
 }
 
 % Project Experience Section - Research Version
 \newcommand{\ProjectExperienceResearch}{
   \sectionheading{Project Experience}
-  \entry{\href{https://nickcline.com/portfolio/furuta-simulation}{Robotic Simulation}}{October 2023 -- Present}
+  \entry{\href{https://nickcline.com/portfolio/furuta-simulation}{Robotic Simulation}}
   \begin{itemize}
-  \item Built a Furuta pendulum model for use in Gazebo and Drake, controlled with C++ scripts and ROS 2. Developed swing-up and energy-minimizing controllers to stabilize pendulum. Future implementations include RL control of the pendulum and double pendulum control.
+  \item Built a Furuta pendulum model for use in Gazebo and Drake, controlled with C++ scripts and ROS 2. Developed swing-up and energy-minimizing controllers to stabilize pendulum. Future implementations include reinforcement learning based control of the pendulum and double pendulum control.
   \item Created a bipedal robot model in Gazebo and used Julia to output inverse dynamics from the system configuration. Future implementations include full-body control of the bipedal robot.
   \end{itemize}
-
-  \entry{\href{https://nickcline.com/portfolio/gearbox-design}{Robotic System Design}}{January 2023 -- Present}
+  
+  \entry{\href{https://nickcline.com/portfolio/gearbox-design}{Robotic System Design}}
   \begin{itemize}
   \item Designed and prototyped cycloidal and planetary gearboxes for use with brushless DC motors. Tested prototypes using speed control and iterated on design to improve assembly and strength.
-  \item Produced a benchtop dynamometer prototype to compare performance and characteristics of two competing DC motors. 
+  \item Produced a benchtop dynamometer prototype to compare performance and characteristics of two competing DC motors.
   \end{itemize}
-
-  \entry{\href{https://nickcline.com/interactive-robotics}{Personal Website Tools}}{June 2024 -- Present}
-  \begin{itemize}
-  \item Developed modular LaTeX templates to streamline resume generation and standardize formatting across different versions, with live versions hosted on GitHub and viewable on my personal website.
-  \item Created JavaScript widgets to display nonlinear dynamical systems, with interactive features to change initial conditions and parameters.
+  
+  %maybe add genetic algorithm for snake and teaching class if you have space?
+  %or add something about skills and let them know that I have robotics stuff but also have pretty good software stuff
+  %and then say "here's what I'm an expert in"
+  
+  %\entry{\href{https://nickcline.com/interactive-robotics}{Personal Website Tools}}
+  
+  %\begin{itemize}
+  %\item Developed modular LaTeX templates to streamline resume generation and standardize formatting across different versions, with live versions hosted on GitHub and viewable on my personal website.
+  %\item Created JavaScript widgets to display nonlinear dynamical systems, with interactive features to change initial conditions and parameters.
   %\item Developed a counter in Rust to record the number of times a user has clicked the widget.
-  \end{itemize}
+  %\end{itemize}
+  
 }
 
 % ===== REGULAR RESUME SECTIONS =====
@@ -119,8 +127,8 @@
   \entry{University of Massachusetts Amherst HRSL, Amherst, MA}{Dec 2021 -- May 2022}
   \textit{Graduate Researcher}
   \begin{itemize}
-  \item Created control scripts in python to implement custom impedance control loops for a robotic hip exoskeleton using a Raspberri Pi 4 and the FlexSEA API.
-  \item Applied asymmetric perturbations to human gait to study behavioral adaptations to a resistant exoskeleton stiffness. Compiled and analyzed data from motion capture and ground reaction forces to identify key trends and possible neuromotor impacts. Co-authored the experiments' findings which were published in IROS 2022.
+  \item Created control scripts in python to implement custom impedance control loops for a robotic hip exoskeleton using the FlexSEA API on Linux.
+  \item Applied asymmetric stiffness to human gait to study behavioral adaptations to a resistant exoskeleton torque. Compiled and analyzed data from motion capture and ground reaction forces to identify key trends and possible neuromotor impacts. Co-authored the experiments' findings which were published in IROS 2022.
   \item Identified new control schemes for gait control, documenting and testing the initial implementation. Takeaways from the experiments were used to develop tools for realtime data analysis and an improved setup process.
   \end{itemize}
 }
