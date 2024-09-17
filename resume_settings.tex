@@ -43,5 +43,9 @@
 }
 
 \newcommand{\entryNoDate}[1]{%
-  \noindent\textbf{#1}\\
+  \noindent\makebox[\textwidth]{%
+    \parbox{\textwidth}{%
+      \textbf{#1}\hfill%
+    }%
+  }%
 }
